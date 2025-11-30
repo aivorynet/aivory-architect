@@ -42,13 +42,14 @@ cd aivory-architect/architect-jetbrains
 # Settings → Plugins → ⚙️ → Install from Disk
 # Select build/distributions/architect-jetbrains-*.zip
 
-Configuration
+```
+### Configuration
 
 1. Open the AIVory Architect tool window (right sidebar)
 2. Add cloud provider credentials via the Vault panel
 3. Start designing your infrastructure
 
-Usage
+## Usage
 
 Once installed, design and deploy infrastructure visually:
 
@@ -59,7 +60,7 @@ Once installed, design and deploy infrastructure visually:
 5. Click "Generate Terraform" → creates main.tf, variables.tf, outputs.tf
 6. Click "Deploy" → runs terraform apply
 
-Cloud Providers
+### Cloud Providers
 
 | Provider| Status | Resources Supported |
 |---------------|----------------|-------------------------------------------------------|
@@ -70,7 +71,7 @@ Cloud Providers
 | RunPod| ✓ Available| GPU Instances, Serverless Endpoints |
 | DeepInfra | ✓ Available| AI Model Endpoints, Inference APIs|
 
-Resource Types
+### Resource Types
 
 AIVory Architect supports these infrastructure components:
 
@@ -82,7 +83,7 @@ AIVory Architect supports these infrastructure components:
 - GPU Instances - AI/ML workloads on RunPod and DeepInfra
 - Kubernetes - Pod deployment and monitoring
 
-Backend Integration
+### Backend Integration
 
 AIVory Architect integrates with the AIVory backend for cloud sync and team features:
 
@@ -94,47 +95,11 @@ Free tier available - Get started immediately with local-only features.
 
 For cloud sync and team features, subscribe at https://app.aivory.net/register/plans.
 
-Development
-
-# Clone the repository
-git clone https://github.com/aivorynet/aivory-architect.git
-cd aivory-architect/architect-jetbrains
-
-# Build the plugin
-./gradlew build
-
-# Run in IDE sandbox
-./gradlew runIde
-
-# Run tests
-./gradlew test
-
-Repository Structure
-
-aivory-architect/
-├── architect-jetbrains/ # JetBrains IDE plugin
-├── architect-vscode/# VS Code extension (planned)
-└── architect-web/ # Web application (planned)
-
-Documentation
-
-- https://docs.aivory.net/architect/getting-started
-- https://docs.aivory.net/architect/cloud-providers
-- https://docs.aivory.net/architect/terraform
-- https://docs.aivory.net/architect/api-reference
-
-Support
+### Support
 
 - Issues: https://github.com/aivorynet/aivory-architect/issues
 - Email: support@aivory.net
 - Website: https://aivory.net
-
-Acknowledgments
-
-Built with:
-- https://plugins.jetbrains.com/docs/intellij
-- https://www.terraform.io
-- https://kubernetes.io
 
 ---
 Made with ❤️ by https://aivory.net
